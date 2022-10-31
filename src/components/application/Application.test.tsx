@@ -64,5 +64,8 @@ describe('Application', () => {
     const imgElement = screen.getByAltText('Tayfur');
     expect(imgElement).toBeInTheDocument(); 
 
+    const closeElement = screen.getByTitle('close');
+    expect(closeElement).toBeInTheDocument(); 
+
   });
 })
