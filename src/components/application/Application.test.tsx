@@ -61,5 +61,8 @@ describe('Application', () => {
     const paragraphElement = screen.getByText('All fields are mandatory!');
     expect(paragraphElement).toBeInTheDocument(); 
 
+    const imgElement = screen.getByAltText('Tayfur');
+    expect(imgElement).toBeInTheDocument(); 
+
   });
 })
