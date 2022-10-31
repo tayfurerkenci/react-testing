@@ -36,6 +36,9 @@ describe('Application', () => {
     // get by label text query works with wrapper labels too!
     const termsElementByLabelText = screen.getByLabelText('I aggree to the terms and conditions');
     expect(termsElementByLabelText).toBeInTheDocument();
+
+    const nameElementByPlaceholderText = screen.getByPlaceholderText('Fullname');
+    expect(nameElementByPlaceholderText).toBeInTheDocument();
  
     const bioElement = screen.getByRole('textbox', {
       name: 'Bio',
