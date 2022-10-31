@@ -53,5 +53,10 @@ describe('Application', () => {
 
     const submitButtonElement = screen.getByRole('button');
     expect(submitButtonElement).toBeInTheDocument(); 
+
+    // get by text query's usage: spanb, p, div
+    const paragraphElement = screen.getByText('All fields are mandatory!');
+    expect(paragraphElement).toBeInTheDocument(); 
+
   });
 })
