@@ -5,7 +5,7 @@ import { Counter } from './Counter';
 describe('Counter', () => {
   test('renders correctly', () => {
     render(<Counter />);
-    
+
     const countElement = screen.getByRole('heading');
     expect(countElement).toBeInTheDocument();
     const incrementButton = screen.getByRole('button', {
@@ -41,7 +41,7 @@ describe('Counter', () => {
     await user.type(amountInput, '10');
     expect(amountInput).toHaveValue(10);
     const setButton = screen.getByRole('button', {
-      name: 'Set'
+      name: 'Set',
     });
     await user.click(setButton);
     const countElement = screen.getByRole('heading');
@@ -54,7 +54,7 @@ describe('Counter', () => {
 
     const amountInput = screen.getByRole('spinbutton');
     const setButton = screen.getByRole('button', {
-      name: 'Set'
+      name: 'Set',
     });
     const incrementButton = screen.getByRole('button', {
       name: 'Increment',
@@ -69,5 +69,4 @@ describe('Counter', () => {
     await user.tab();
     expect(setButton).toHaveFocus();
   });
-
-})
+});

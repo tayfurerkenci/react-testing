@@ -10,6 +10,8 @@ div {
   padding: 0.5rem;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   margin-left: 0.5rem;
 }

@@ -8,10 +8,10 @@ function App() {
   return (
     <AppProviders>
       <div className="App">
-      <MuiMode />
-      <Application />
+        <MuiMode />
+        <Application />
         <hr />
-      <Counter />
+        <Counter />
       </div>
     </AppProviders>
   );

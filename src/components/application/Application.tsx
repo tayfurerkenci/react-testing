@@ -6,11 +6,16 @@ export const Application = () => {
       <p>All fields are mandatory!</p>
       <span title="close">X</span>
       <img src="https://via.placeholder.com/600x400" alt="Tayfur" />
-      <div data-testid="custom-element" >Custom HTML Element</div>
+      <div data-testid="custom-element">Custom HTML Element</div>
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Fullname" defaultValue="Tayfur" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Fullname"
+            defaultValue="Tayfur"
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
@@ -29,7 +34,8 @@ export const Application = () => {
         </div>
         <div>
           <label>
-            <input type="checkbox" id="terms" />I aggree to the terms and conditions
+            <input type="checkbox" id="terms" />I aggree to the terms and
+            conditions
           </label>
         </div>
         <button>Submit</button>

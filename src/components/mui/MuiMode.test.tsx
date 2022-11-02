@@ -7,7 +7,7 @@ describe('MuiMode', () => {
       //wrapper: AppProviders
     });
     const headingElement = screen.getByRole('heading', {
-      name: 'dark mode'
+      name: 'dark mode',
     });
 
     expect(headingElement).toHaveTextContent('dark mode');
