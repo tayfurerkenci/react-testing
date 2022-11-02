@@ -72,5 +72,7 @@ describe('Application', () => {
 
     const customElement = screen.getByTestId('custom-element');
     expect(customElement).not.toBeEnabled();
+
+    expect(customElement).not.toBeEnabled();
   });
 });
