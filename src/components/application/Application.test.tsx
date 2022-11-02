@@ -71,6 +71,6 @@ describe('Application', () => {
     expect(closeElement).toBeInTheDocument();
 
     const customElement = screen.getByTestId('custom-element');
-    expect(customElement).toBeInTheDocument();
+    expect(customElement).not.toBeInTheDocument();
   });
 });
