@@ -71,13 +71,6 @@ describe('Application', () => {
     expect(closeElement).toBeInTheDocument();
 
     const customElement = screen.getByTestId('custom-element');
-    expect(customElement).not.toBeEnabled();
-
-    expect(customElement).not.toBeEnabled();
-    expect(customElement).not.toBeEnabled();
-    expect(customElement).not.toBeEnabled();
-
-    console.log(x);
-    const x = 'asd';
+    expect(customElement).toBeInTheDocument();
   });
 });
