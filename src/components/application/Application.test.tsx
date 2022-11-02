@@ -76,5 +76,8 @@ describe('Application', () => {
     expect(customElement).not.toBeEnabled();
     expect(customElement).not.toBeEnabled();
     expect(customElement).not.toBeEnabled();
+
+    console.log(x);
+    const x = 'asd';
   });
 });
