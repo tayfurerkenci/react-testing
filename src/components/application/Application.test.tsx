@@ -74,5 +74,7 @@ describe('Application', () => {
     expect(customElement).not.toBeEnabled();
 
     expect(customElement).not.toBeEnabled();
+    expect(customElement).not.toBeEnabled();
+    expect(customElement).not.toBeEnabled();
   });
 });
